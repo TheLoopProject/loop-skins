@@ -1,0 +1,30 @@
+{
+	"schemaVersion": 1,
+	"id": "loop-skins",
+	"version": "${version}",
+	"name": "Loop Skins",
+	"description": "A simple fix for old Minecraft's skins.",
+	"authors": [
+		"Loop",
+		"WorldWidePixel"
+	],
+	"contact": {
+		"homepage": "https://loopmc.org/",
+		"sources": "https://github.com/TheLoopProject/"
+	},
+	"license": "MIT",
+	"icon": "assets/skins/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"init": [
+			"org.loopmc.skins.LoopSkins"
+		]
+	},
+	"mixins": [
+		"skins.mixins.json"
+	],
+	"depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": ">=${minecraft_version} <=1.6.4"
+	}
+}
